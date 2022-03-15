@@ -87,11 +87,22 @@
     requestAnimationFrame(draw);
   }
 
-  if (window.innerWidth >= 600) {
+  function start() {
     canvas.width = window.innerWidth * 0.4;
     canvas.height = window.innerHeight;
+    roads = [];
     roads.push(new Road(canvas.width + 10, canvas.height + 10, Math.atan2(-canvas.height, -canvas.width), 60, Math.sqrt(canvas.height * canvas.height + canvas.width * canvas.width) + 20, 1, 266));
     draw();
   }
+
+  if (window.innerWidth >= 600) {
+    start();
+  }
+
+  window.onresize = function (e) {
+    console.log("hi");
+    c.clearRect(0, 0, canvas.width, canvas.height);
+    start();
+  };
 
 }());
