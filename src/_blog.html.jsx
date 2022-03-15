@@ -6,7 +6,7 @@ import Main from './components/main.html.jsx'
 export default ({ data, env }) => (
   <Html title="blog">
     <Main>
-      <h1>blog</h1>
+      <h1></h1>
     </Main>
   </Html>
 )

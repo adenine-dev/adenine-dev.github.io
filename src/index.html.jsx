@@ -53,16 +53,20 @@ export default ({ data, env }) => (
       css={css`
         font-size: 3em;
       `}>
-      My name is Alexa
+      My name is Adenine
     </h3>
     <P>
       I'm a software developer, currently interested in practical graphics
       applications and user interaction with those applications. A lot of my
-      work is <Link href="https://github.com/alexa-griffin">open source</Link>,
-      and I write about some of it on my <Link href="/blog">blog</Link>.
+      work is <Link href="https://github.com/adenine-dev">open source</Link>.
     </P>
-    <P>
-      If you would like to get in touch, please email to contact @ this website.
+    <P css={css`
+      a {
+        margin-right: 1em;
+      }
+    `}>
+      <Link href="#">Resume</Link>
+      <Link href="#">CV</Link>
     </P>
     <canvas
       id="canvas"
@@ -71,6 +75,7 @@ export default ({ data, env }) => (
         bottom: 0;
         right: 0;
         pointer-events: none;
+        z-index: -1;
       `}></canvas>
 
     <script src="script/index_canvas.js"></script>

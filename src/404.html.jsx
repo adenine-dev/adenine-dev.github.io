@@ -4,8 +4,8 @@ import Html from './layout/html.html.jsx'
 
 const glitch = keyframes`
     0%, 6%, 8%, 49%, 51%, 100% { transform: scale(1); opacity: 0.2; }  
-    7% { transform: scaleY(1.7); opacity: 0.7; }
-    50% { transform: scaleX(1.4);  opacity: 0.7; }
+    7% { transform: scaleY(1.2); opacity: 0.7; }
+    50% { transform: scaleX(1.05);  opacity: 0.7; }
 `
 
 export default ({ data, env }) => (
