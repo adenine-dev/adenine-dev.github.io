@@ -35,7 +35,7 @@ const P = styled.p`
 
 export default ({ data, env }) => (
   <Html
-    title="Alexa Griffin"
+    title="Adenine Griffin"
     style={css`
       padding: 10vh 40% 0 5%;
       font-size: calc(10px + 0.4vw);
@@ -57,8 +57,7 @@ export default ({ data, env }) => (
     </h3>
     <P>
       I'm a software developer, currently interested in practical graphics
-      applications and user interaction with those applications. A lot of my
-      work is <Link href="https://github.com/adenine-dev">open source</Link>.
+      applications and user interaction with those applications.
     </P>
     <P css={css`
       a {
