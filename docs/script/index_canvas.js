@@ -100,7 +100,6 @@
   }
 
   window.onresize = function (e) {
-    console.log("hi");
     c.clearRect(0, 0, canvas.width, canvas.height);
     start();
   };

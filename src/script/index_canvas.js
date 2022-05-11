@@ -84,7 +84,6 @@ if (window.innerWidth >= 600) {
 }
 
 window.onresize = e => {
-    console.log("hi")
     c.clearRect(0, 0, canvas.width, canvas.height)
     start()
 }

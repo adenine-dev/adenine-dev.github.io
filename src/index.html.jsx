@@ -64,8 +64,7 @@ export default ({ data, env }) => (
         margin-right: 1em;
       }
     `}>
-      <Link href="#">Resume</Link>
-      <Link href="#">CV</Link>
+      <Link href="./resume.pdf">Resume</Link>
     </P>
     <canvas
       id="canvas"
