@@ -1,4 +1,6 @@
-git add *
-git commit -m "automated build script"
+npm run build
 
-git push
+@REM git add *
+@REM git commit -m "automated build script"
+
+@REM git push
