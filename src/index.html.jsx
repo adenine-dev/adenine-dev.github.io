@@ -59,12 +59,14 @@ export default ({ data, env }) => (
       I'm a software developer, currently interested in practical graphics
       applications and user interaction with those applications.
     </P>
-    <P css={css`
-      a {
-        margin-right: 1em;
-      }
-    `}>
+    <P
+      css={css`
+        a {
+          margin-right: 1em;
+        }
+      `}>
       <Link href="./resume.pdf">Resume</Link>
+      <Link href="./portfolio.html">Portfolio</Link>
     </P>
     <canvas
       id="canvas"
