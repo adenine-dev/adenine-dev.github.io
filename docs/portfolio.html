@@ -63,13 +63,22 @@
             margin: 0 auto 24px;
         }
 
+        .item img {
+            max-width: 360px;
+            max-height: 240px;
+            border-radius: 24px;
+            margin: 0 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
         @media (max-width: 720px) {
             .item {
                 flex-direction: column;
             }
 
             .item img {
-                margin: 20px;
+                margin: 20px 0;
+                width: 100%;
             }
         }
 
@@ -79,14 +88,6 @@
                 margin: 0;
                 width: calc(100% - 400px);
             }
-        }
-
-        .item img {
-            max-width: 360px;
-            max-height: 240px;
-            border-radius: 24px;
-            margin: 0 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -129,8 +130,8 @@
         </div>
         <div class="item">
             <p>
-                <a href="https://github.com/adenine-dev/rust-analyzer" class="link">Rust Analyzer Memory Layout
-                    Viewer</a>: Added a recursive memory layout viewer to the rust analyzer language server.
+                <a href="https://github.com/adenine-dev/rust-analyzer" class="link">Memory Layout Viewer</a>: Added a
+                recursive memory layout viewer to the rust analyzer language server.
             </p>
             <a href="imgs/rust-analyzer.png">
                 <img src="imgs/rust-analyzer.png" alt="Recursive table view into a rust structure's size and alignment">
